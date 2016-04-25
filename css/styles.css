@@ -1,5 +1,53 @@
-/*body {
-	background-color: #FF0000;
-}*/
+nav {
+	background-color: #333;
+}
 
-/* Comment goes here */
+nav ul {
+	display: none;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+
+#hamburger {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 480px) {
+
+	nav ul {
+		display: block;
+		text-align: right;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	nav img:not(#hamburger) {
+		float: left;
+	}
+
+	nav li {
+		display: inline-block;
+		line-height: 50px;
+		margin: 0 20px;
+	}
+
+	nav li a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+}
