@@ -26,6 +26,10 @@ main {
 	margin: 0 auto;
 }
 
+.latest img {
+	margin: 0 auto;
+	display: block;
+}
 
 
 
@@ -62,6 +66,25 @@ main {
 	nav li a {
 		color: #fff;
 		text-decoration: none;
+	}
+
+}
+
+@media all and (min-width: 550px) {
+
+	.latest img {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.latest {
+		margin-bottom: 40px;
+	}
+
+	.latest:after {
+		content: '';
+		display: block;
+		clear: both;
 	}
 
 }
